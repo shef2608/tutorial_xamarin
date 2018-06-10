@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:DemoRestApi" 
+             x:Class="DemoRestApi.MainPage"
+             BackgroundColor="Gray">
+
+    <ListView x:Name="productsListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="{Binding Task_ID}" TextColor="Fuchsia"/>
+                        <Label x:Name="{Binding Task_Name}" TextColor="Blue"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>

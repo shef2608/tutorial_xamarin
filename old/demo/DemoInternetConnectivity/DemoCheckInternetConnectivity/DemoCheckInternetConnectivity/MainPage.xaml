@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:DemoCheckInternetConnectivity"
+             x:Class="DemoCheckInternetConnectivity.MainPage">
+
+    <ContentPage.Content>
+
+        <StackLayout BackgroundColor="Red" Padding="5">
+            <Entry Text="" x:Name="urlEntry" Placeholder="url"
+                   PlaceholderColor="Silver"/>
+            <Button x:Name="btn" Text="Get Data from Url" Clicked="Handle_Clicked"
+                    BackgroundColor="Teal"/>    
+            <StackLayout>
+                <ScrollView>
+                    <ActivityIndicator x:Name="progressBar" Color="Lime" 
+                                       IsEnabled="true" IsVisible="false" 
+                                       IsRunning="false"/>
+                    <WebView x:Name="browser" VerticalOptions="FillAndExpand" 
+                             HeightRequest="1000" Navigated="Handle_Navigated"
+                             Navigating="Handle_Navigating"/>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

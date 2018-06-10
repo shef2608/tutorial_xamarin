@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{D2C950F4-BC6D-491F-8B03-035D018E2FAD}|Default">
+  <MonoDevelop.Ide.ItemProperties.DemoMaps.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DemoMaps/MainPage.xaml">
+    <Files>
+      <File FileName="DemoMaps/MainPage.xaml" Line="5" Column="53" />
+      <File FileName="DemoMaps/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="DemoMaps.Android/Properties/AndroidManifest.xml" Line="10" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.DemoMaps.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DemoMaps.UITests FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>

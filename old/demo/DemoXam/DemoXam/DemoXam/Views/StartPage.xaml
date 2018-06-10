@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoXam.Views.StartPage"
+             Title="First">
+    
+     <StackLayout BackgroundColor="White"
+                 VerticalOptions="FillAndExpand">
+
+        <Grid BackgroundColor="Olive" Padding="10,20,30,40">
+
+              <Entry x:Name="MainEntry"
+                BackgroundColor="Silver"/>
+        </Grid>
+
+        <Button Clicked="button_clicked"
+                Text="Say Hello"
+                TextColor="White"
+                BackgroundColor="Olive"/>
+
+        <Label x:Name="MainLabel"
+               TextColor="Olive"
+               FontSize="60"/>
+
+         <Button Clicked="Handle_Clicked"
+                Text="navigate to second page"
+                TextColor="White"
+                BackgroundColor="Olive"/>
+        
+        </StackLayout>
+    
+</ContentPage>

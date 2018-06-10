@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:DemoImage" 
+             x:Class="DemoImage.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New" Icon="plus.png" Priority="0" Clicked="addClicked"
+                    Order="Secondary"/>
+        <ToolbarItem Text="Cancel"  Priority="1"
+                    Order="Default"/>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button x:Name="pickPhoto" Text="Pick Photo" Clicked="Handle_Clicked"/>
+
+        <Image x:Name="galleryImage" HeightRequest="200"/>
+
+    </StackLayout>
+    
+</ContentPage>

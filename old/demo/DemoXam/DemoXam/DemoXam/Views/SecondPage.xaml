@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="DemoXam.Views.SecondPage"
+             BackgroundColor="White"
+             Title="Second">
+
+    <Label x:Name="SecondLabel" Text="Second"
+               TextColor="Olive"
+               FontSize="60"/>
+
+    <ListView x:Name="MainListView" HasUnevenRows="true">
+    <ListView.ItemTemplate>
+            <DataTemplate>
+               <ViewCell>
+                    <StackLayout Orientation="Vertical" Padding="0,10,0,10" BackgroundColor="Lime">
+                                <Label Text="{Binding Name}" Font="Medium"  TextColor="White"/>
+                                <Label Text="{Binding Age}" TextColor="White" Opacity="12"/>
+                            </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+    </ListView.ItemTemplate>
+    </ListView>
+        
+</ContentPage>
+
+

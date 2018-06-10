@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+    <PackageReference Include="INotifyPropertyChangedExtensions" Version="1.0.1" />
+    <PackageReference Include="Nito.KitchenSink.NotifyPropertyChanged" Version="1.1.0" />
+    <PackageReference Include="FSharp.ViewModule.Core" Version="1.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MenuPage\" />
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="MenuPage\MenuPage.xaml" />
+  </ItemGroup>
+</Project>
